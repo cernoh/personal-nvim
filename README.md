@@ -1,1 +1,1 @@
-my own lazyvim setup 
+my own [Lazyvim](https://github.com/LazyVim/LazyVim) setup , just use that instead
