@@ -1,12 +1,15 @@
-local colorscheme = require "lazyvim.plugins.colorscheme"
+local colorscheme = require("lazyvim.plugins.colorscheme")
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "catppuccin",
+        },
     },
-  },
-  {
-    "xiyaowong/transparent.nvim"
-  }
+    {
+        "xiyaowong/transparent.nvim",
+    },
+    {
+        "habamax/vim-godot",
+    },
 }
