@@ -13,4 +13,12 @@ return {
     {
         "habamax/vim-godot",
     },
+    {
+        "neovim/nvim-lspconfig",
+        opts = {
+            servers = {
+                gleam_lsp = {},
+            },
+        },
+    },
 }
