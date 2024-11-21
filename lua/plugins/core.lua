@@ -149,23 +149,8 @@ return {
             enabled = true,
             filetypes = { "markdown" },
             resolve_image_path = function(document_path, image_path, fallback)
-                -- Handle absolute paths
-                if vim.fn.fnamemodify(image_path, ":p") == image_path then
-                    return image_path
-                end
+                image_path = "/home/davinceyr/Documents/University files/uninexusrepo/uninexusrepo/" .. image_path
 
-                -- Base directory for images
-                local base_dir = vim.fn.expand("~/Documents/University files/uninexusrepo/uninexusrepo")
-
-                -- Construct full path
-                local full_path = vim.fn.resolve(base_dir .. "/" .. image_path)
-
-                -- Check if path exists
-                if vim.fn.filereadable(full_path) == 1 then
-                    return full_path
-                end
-
-                -- Fallback to default behavior if path doesn't exist
                 return fallback(document_path, image_path)
             end,
         },
